@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>IboSan</title>
+
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</head>
+
+<body>
+    <ul id="menu" class="menu">
+        <li><a href="#over-ons">Over ons</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <a href="#myVideo"><img src="img/logo.png"></a>
+        <li><a href="#contact">Rooster</a></li>
+        <li><a href="#contact">Clinics</a></li>
+    </ul>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/main.mp4" type="video/mp4">
+        <h1>Your browser does not support HTML5 video.</h1>
+    </video>
+    <section id="scroll-down" class="demo">
+        <a href="#over-ons"><span></span>Scroll</a>
+    </section>
+    <div id="over-ons">
+        <h1>Over ons</h1>
+        <p>Bij IboSan geven we iedereen de aandacht die hij of zij verdient. We vinden het geweldige om progressie te zien bij de mensen en dat kan alleen met optimale aandacht. Met een leuke groep en een positieve sfeer train je bij ons op je gemak. Kortom, klokkijken tijdens de training is niet nodig, want voor je weet is het helaas al voorbij. Kom langs voor een proefles en ervaar zelf de passie bij IboSan!</p>
+        <img src="img/over-ons.png" class="over-ons-img">
+    </div>
+    <div id="trainers">
+        <h1>Trainers</h1>
+        <h2 class="trainer-title-left">Sanjay Soekhoe</h2>
+        <p class="left-text">Sanjay begon met vechtsport op z'n 15e en heeft ervaring met vele vechtsporten. Op z'n 20e is hij begonnen met lesgeven. Hij heeft aan alle soorten en maten lesgegeven, van kinderen tot aan wereldkampioenen. Ook heeft Sanjay zichzelf ondergedompeld in bijna elke aspect van fysieke (kracht)training en dat is te merken in elke training bij IboSan. Zelf traint hij nog dagelijks en hij geeft dan ook met grote passie les</p>
+        <img src="img/sanjay.jpg" class="img1">
+        <h2 class="trainer-title-right">Ibrahim Saber</h2>
+        <p class="right-text">Ibo begon al heel vroeg met het beoefenen van vechtsporten. Op 6-jarige leeftijd deed hij aan karate. Later stapte hij over naar taekwondo en daarna Kung fu. Als laatste is hij met thaiboksen begonnen en daar is hij blijven hangen. Hij heeft daar de topsportstatus bereikt.<br><br> Ibo geeft nu al 12 jaar les aan beginners en wedstrijdvechters. Dat deed hij bij trainer Joao Vieira, voordat hij samen met Sanjay besloot om IboSan te beginnen. Voor Ibo is het leukst aan lesgeven de passie en gevoel dat hij erin stopt en de vooruitgang te zien bij de mensen die bij IboSan trainen.</p>
+        <img src="img/logo.png" class="img2">
+    </div>
+<!--
+    <div id="videos">
+        <h1>Video's</h1>
+        <video width="400" controls>
+  <source src="video/Majda%20en%20Dennis.mov" type="video/mov">
+</video>
+        <img src="img/sanjay.jpg" class="video">
+        <img src="img/sanjay.jpg" class="video">
+    </div>
+-->
+
+
+    <div id="contact">
+        <h1>Rooster</h1>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>Dag</th>
+                        <th>Aanvang</th>
+                        <th>Les</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td>Maandag</td>
+                        <td>19:30</td>
+                        <td>20:00 / 21:15</td>
+                    </tr>
+                    <tr>
+                        <td>Donderdag</td>
+                        <td>19:30</td>
+                        <td>20:00 / 21:15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="clinics"></div>
+        <h1>Clinics</h1>
+        <h3>Boksclinics worden steeds populairder voor personeelsuitjes, sportclubs, e.a. Wat is leuker dan om je collega's af te beulen en tegelijkertijd het team verband te versterken. Een bokstraining is nooit eentonig en daarom heel leuk om te doen. <br> Ben je op zoek naar een leuke en uitdagende sportactiviteit voor jou en je team. Schrijf je dan hieronder in voor een van onze boksclinics!</h3>
+        <br>
+        <br>
+        <a id="demo01" class="clinic" href="#animatedModal">Boek nu een clinic</a>
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.11';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/IboSanBoxing/" data-width="200" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+            <div id="btn-close-modal" class="close-animatedModal">
+                <h3> &#60 HOME</h3>
+            </div>
+
+            <div class="modal-content">
+                <h1>Wij helpen je graag bij het verzorgen van een clinic!</h1>
+                <form class="form" netlify action="contact.html">
+                    <p>Uw naam</p><input type="text" name="naam" placeholder="Uw naam">
+                    <p>Uw emailadres</p><input type="text" name="email" placeholder="Uw emailadres">
+                    <p>Wij willen</p>
+                    <div class="container">
+                        <div class="radio">
+                            <input id="Boeken" name="wij-willen" type="radio">
+                            <label for="Boeken" class="radio-label">boeken</label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="Offerte" name="wij-willen" type="radio">
+                            <label for="Offerte" class="radio-label">een offerte</label>
+                        </div>
+                        <div class="radio">
+                            <input id="anders" name="wij-willen" type="radio">
+                            <label for="anders" class="radio-label">anders</label>
+                        </div>
+                    </div>
+                    <p>Aantal mensen</p><input type="number" placeholder="Aantal mensen">
+                    <p>Wij zijn een</p>
+                    <div class="container">
+                        <div class="radio">
+                            <input id="Vereniging" name="Wij-zijn" type="radio">
+                            <label for="Vereniging" class="radio-label">vereniging</label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="bedrijf" name="Wij-zijn" type="radio">
+                            <label for="bedrijf" class="radio-label">bedrijf</label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="overig" name="Wij-zijn" type="radio">
+                            <label for="overig" class="radio-label">overig</label>
+                        </div>
+                    </div>
+                    <button type="submit" id="login-button">Plan een afspraak</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scroll.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script>
+        //Form Modal
+        $("#demo01").animatedModal();
+    </script>
+</body>
+</html>
